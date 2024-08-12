@@ -1,0 +1,50 @@
+/*
+h1, h2{                              group select h1 and h2 
+    font-size: 54px;
+    color:purple;
+}
+    
+* {                                 selects every individual element
+
+}                                   */
+
+html {                              /* selects the html element which is everything */
+    font-size: 22px;
+}
+
+body {                              /* selects the entire body */
+
+}
+
+main {                              /* semantic element, selects the main element*/
+    font-family: monospace;
+}
+
+button, input, textarea, select {   /* would make these elements inherit the font settings */
+    font: inherit;
+}
+
+.gray {                             /* class starts with '.' and then the name of the class */
+    color:gray;
+}
+
+p {                                 /* read first so this is not applied */
+    color:violet/*!important;*/   /* important flag forces this rule to take precendence, not good practice to use. */  
+}
+
+p {                                 /* read last so this is applied */
+    color:red;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+#second {                           /* changes the style of the id with the name "second" */
+    font-variant: small-caps;
+}
+
+.ital {                             /* class that makes text italicized */
+    font-style: italic;
+}
