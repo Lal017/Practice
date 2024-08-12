@@ -1,0 +1,285 @@
+<!DOCTYPE html>                                                                                 <!-- DOCTYPE decleration used for every html file -->
+<html lang = "en-US">                                                                           <!-- starts the document and declares the language as english from US -->
+    <head>                                                                                      <!-- holds the metadata (data that is not seen) -->
+        <meta charset = "UTF-8">                                                            <!-- declares the character encoding -->
+        <meta name = "author" content = "Eduardo Salazar">                                  <!-- author of the webpage -->
+        <meta name = "description" content = "This is a practice
+        for my first webpage">                                                              <!-- detailed description of the webpage -->
+        <link rel = "icon" href = "img/icon.jpg" type = "image/x-icon">                     <!-- sets the icon for the webpage -->
+        <link rel = "stylesheet" href = "main.css" type = "text/css">                       <!-- links to CSS file-->
+        <title>My First Web Page</title>                                                    <!-- title of the website -->
+    </head>
+    <body>                                                                                      <!-- displays the data that is seen onto the website -->
+        <header>                                                                                <!-- semantic for the header of the webpage -->
+            <h1>My goals for the year</h1>                                                      <!-- displays a heading to the webpage -->
+        
+            <nav>                                                                               <!-- semantic to label the navigation portion -->
+                <ul>                                                                            <!-- unordered list element-->
+                    <li>                                                                        <!-- list element in unordered list -->
+                        <a href = "#HTML">Learning HTML</a>                                     <!-- links to the HTML section -->
+                    </li>
+                    <li>
+                        <a href = "#vacation">My Vacation Plans</a>                             <!-- links to the vacation section -->
+                    </li>
+                    <li>
+                        <a href = "#contact">Contact me</a>                                     <!-- links to the contact section -->
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>                                                                                    <!-- adds horizontal line -->
+
+        <main>                                                                                  <!-- semantic to label main part of webpage-->
+            <section id = "HTML">                                                               <!-- declares a section to link to -->
+                <h2>I'm ready to learn HTML</h2>                                                <!-- displays a subheading to the webpage -->
+                <article>                                                                           <!-- labels a small section of the webpage -->
+                    <img src = "img/HTML.jpg" alt = "HTML Icon" width = "256" height = "256">       <!-- displays image of HTML icon -->
+                    <p>This is my first webpage</p>                                                 <!-- displays a line of text -->
+                    <h3>My daily schedule</h3>                                                      <!-- displays a subheading to the subheading -->
+                </article>
+                <article>
+                    <h3>Let me tell you how:</h3>
+                    <ol>                                                                            <!-- ordered list element -->
+                        <li> ...I went to the park </li>                                            <!-- list element -->
+                        <li> ...I ate lunch </li>
+                        <li> ...I walked my dog </li>
+                    </ol>
+                    <aside>                                                                         <!-- displays some information with drop down menu -->
+                        <details>
+                            <summary>
+                                The <mark>number of hours</mark> I code a day                       <!-- question with interactive drop down answer-->
+                            </summary>
+                            <p>I start coding at <time datetime = "10:00">10:00 AM</time> and
+                            code for <time datetime = "PT4H">4 hours</time> straight</p>            <!-- answer to question -->
+                        </details>
+                    </aside>
+                    
+                    <br>
+
+                    <table>                                                                         <!-- adds a table to the webpage -->
+                        <caption>My Daily Schedule</caption>                                        <!-- caption of the table -->
+                        <thead>                                                                     <!-- semantic for the table head -->
+                            <tr>                                                                    <!-- table row element -->
+                                <th>&nbsp;</th>
+                                <th scope = "col">Time</th>                                                       <!-- table head element -->
+                                <th scope = "col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>                                                                     <!-- semantic for table body -->
+                            <tr>
+                                <th scope = "row">Morning</th>
+                                <td>                                                                <!-- table data element -->
+                                    <time datetime = "08:00">8:00 AM</time>-<time datetime = "11:00">11:00 AM</time>
+                                </td>
+                                <td>Write code</td>
+                            </tr>
+                            <tr>
+                                <th scope = "row">Break</th>
+                                <td>
+                                    <time datetime = "11:00">11:00 AM</time>-<time datetime = "12:00">12:00 PM</time>
+                                </td>
+                                <td>Eat lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope = "row">Afternoon</th>
+                                <td>
+                                    <time datetime = "12:00">12:00 PM</time>-<time datetime = "17:00">5:00 PM</time>
+                                </td>
+                                <td>Study for courses</td>
+                            </tr>
+                            <tr>
+                                <th rowspan = "2" scope = "row">Other</th>
+                                <td rowspan = "2">All other times</td>
+                                <td>Free time</td>
+                            </tr>
+                            <tr>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>                                                                     <!-- semantic for the table footer-->
+                            <tr>
+                                <td colspan = "3">And thats what I do everyday, 5 days a week. Eat, sleep, code, recharge.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+            </section>
+        
+            <hr>
+
+            <section id = "vacation">
+                <h2>I've been planning a vacation</h2>
+                <p>I work hard and need a gettaway</p>
+                <p>I live in las vegas so I want to visit a forest</p>
+
+                <h3>Places I'd like to visit</h3>
+                <ul>
+                    <li><p>I've heard good things about <abbr title = "Washington">WA</abbr></p></li>
+                    <li>
+                        <figure>                                                                    <!-- semantic for a figure -->
+                            <img src = "img/washington.jpg" alt = "Washington State Scenery" width = "640" height = "360" loading = "lazy">
+                            <figcaption>Washington state Scenery</figcaption>                       <!-- caption related to the image in the figure -->
+                        </figure>
+                    </li>
+                    <li><p>I've heard good things about:</p>
+                        <address>                                                                   <!-- tells the browser that this is an address/location -->
+                            &nbsp;&nbsp;&nbsp; Av. de Concha Espina, <br>
+                            &nbsp;&nbsp;&nbsp; 1, Chamartín, 28036 Madrid, Spain <br>
+                        </address>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src = "img/Santiago_Bernabeu.jpg" alt = "Santiago Bernabeu Stadium" width = "640" height = "360" loading = "lazy">
+                            <figcaption>Santiago Bernabeu Stadium in Madrid, Spain</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+
+                <h3>Places I want to avoid</h3>
+                <p>I would <strong>hate</strong> to spend my time in 
+                    <abbr title = "Texas">
+                        <a href = "https://www.google.com/search?q=Texas&rlz=1C1UEAD_enUS1035US1035&oq=Texas&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIQCAEQLhjHARixAxjRAxiABDIMCAIQIxgnGIAEGIoFMgoIAxAuGLEDGIAEMgoIBBAAGLEDGIAEMg0IBRAuGIMBGLEDGIAEMgoIBhAuGNQCGIAEMg0IBxAuGK8BGMcBGIAEMg0ICBAuGNQCGLEDGIAEMg0ICRAuGNQCGLEDGIAE0gEIMTM1NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8">TX
+                        </a>
+                    </abbr></p>
+                <figure>
+                    <img src = "img/Texas.jpg" alt = "Texas Freeways" width = "640" height = "360" loading = "lazy">
+                    <figcaption>Common Texas infrastructure</figcaption>
+                </figure>
+                <dl>                                                                            <!-- description list -->
+                    <dt>Oklahoma</dt>
+                    <dd>There seems to be nothing in this state</dd>
+                    <dd>
+                        <figure>
+                            <img src = "img/Oklahoma.jpg" alt = "Oklahoma nothingness" width = "640" height = "360" loading = "lazy">
+                            <figcaption>The nothingness of Oklahoma</figcaption>
+                        </figure>
+                    </dd>
+                    <dt>Florida</dt>
+                    <dd>I hate extremely <strong>humid</strong> places</dd>
+                </dl>
+            </section>
+
+            <hr>
+
+            <section id = "contact">
+                <h2>Contact Me</h2>
+                <p>I'd really like to hear from you!</p>
+
+                <form action = "https://httpbin.org/get" method = "get">                        <!-- Form element to recieve information from user -->
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p>
+                            <label for = "first_name">First Name: </label>                          <!-- label element to label the information being entered -->
+                            <input type = "text" name = "first_name" id = "first_name" placeholder = "First Name" required>  <!-- input element to add meaning and requirements to the information being entered-->
+                        </p>
+                        <p>
+                            <label for = "last_name">Last Name: </label>
+                            <input type = "text" name = "last_name" id = "last_name" placeholder = "Last Name" autocapitalize = "on" required>
+                        </p>
+                        <p>
+                            <label for = "password">Password: </label>
+                            <input type = "password" name = "password" id = "password" placeholder = "Pass123" autocapitalize = "on" required>    <!-- Password type attribute to censor the information being entered-->
+                        </p>
+                        <p>
+                            <label for = "phone">Phone: </label>
+                            <input type = "tel" name = "phone" id = "phone" placeholder = "(123) 456-7890" required pattern = "[0-9]{3}[0-9]{3}[0-9]{4}">    <!-- telephone number type attribute to enter a phone number -->
+                        </p>
+                        <p>
+                            <label for = "decade">Favorite Decade: </label>
+                            <input type = "number" name = "decade" id = "decade" min = "1950" max = "2020" step = "10" value = "1980" >    <!-- number element to enter your favorite decade from 1950 - 2020 -->
+                        </p>
+                <!-- <p>
+                            <label for = "coffee">Favorite Coffee: </label>
+                            <select name = "coffee" id = "cofee">                                            gives the user an option to select from a few different options
+                                <optgroup label = "Coffees">                                                 sets a group of options under a category 
+                                    <option value = "regular coffee">Regular Coffee</option>                 one of the options in the selection 
+                                    <option value = "iced coffee">Iced Coffee</option>
+                                </optgroup>
+                                <optgroup label = "Expresso Drinks">
+                                    <option value = "latte">Latte</option>
+                                    <option value = "cappuccino">Cappuccino</option>
+                                    <option value = "macchiato">Macchiato</option>
+                                </optgroup>
+                                <option value = "other">Other</option>
+                            </select>
+                        </p> -->
+                        <p>
+                            <label for = "coffee">Favorite Coffee: </label>
+                            <input type = "text" name = "coffee" id = "coffee" list = "coffee-list" placeholder = "Regular Coffee">  <!-- makes the type of input into a list with list attribute -->
+                            <datalist id = "coffee-list">                                                                           <!-- encloses the list of options -->
+                                <option value = "Regular Coffee">                                                                   <!-- one of the options in the selection -->
+                                <option value = "Iced Coffee">
+                                <option value = "Latte">
+                                <option value = "Cappuccino">
+                                <option value = "Macchiato">
+                                <option value = "Other">
+                            </datalist>
+                        </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>What is your favorite food?</legend>
+                        <p>
+                            <input type = "radio" name = "food" id = "tacos" value = "tacos">                   <!-- radio type to make it a button input -->
+                            <label for = "tacos">Tacos</label>                                                  <!-- for should be the same as the ID -->
+                        </p>
+                        <p>
+                            <input type = "radio" name = "food" id = "pizza" value = "pizza">                   <!-- you are only allowed one selection of the same name -->
+                            <label for = "pizza">Pizza</label>                                                  
+                        </p>
+                        <p>
+                            <input type = "radio" name = "food" id = "other" value = "other">                   <!-- make sure different id types are unique across the same form -->
+                            <label for = "other">Other</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Do you have pets?</legend>
+                        <p>
+                            <input type = "checkbox" name = "pets" id = "dog" value = "dog">                <!-- checkbox type to have user input via checkbox -->
+                            <label for = "dog">Dog</label>
+                        </p>
+                        <p>
+                            <input type = "checkbox" name = "pets" id = "cat" value = "cat">
+                            <label for = "cat">Cat</label>
+                        </p>
+                        <p>
+                            <input type = "checkbox" name = "pets" id = "fish" value = "fish">
+                            <label for = "fish">Fish</label>
+                        </p>
+                        <p>
+                            <input type = "checkbox" name = "pets" id = "other_pet" value = "other_pet">        <!-- different ID because we already used other -->
+                            <label for = "other_pet">Other</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Send me a note</legend>
+                        <p>
+                            <label for = "message">Your Message</label>
+                            <br>
+                            <textarea name = "message" id = "message" cols = "30" rows = "10" placeholder = "Your message here..."></textarea>  <!-- used to let the user input a message -->
+                        </p>
+                    </fieldset>
+                    
+                    <br>
+
+            <!--    <button type = "submit">Submit</button>                                                                 submits the form via get request -->
+                    <button type = "submit" formaction = "https://httpbin.org/post" formmethod = "post">Submit</button>   <!-- submits the form via post request -->
+                    <button type = "reset">Reset</button>                                                                 <!-- resets the form -->
+                </form>
+            </section>
+        </main>
+
+        <hr>
+
+        <footer>                                                                                <!-- semantic for the footer of the webpage -->
+            <p>&lt;&lt;&lt; &copy; <a href = "about.HTML">Salazar Inc.</a> &gt;&gt;&gt;</p>     <!-- "<<< copyright Salazar inc. >>>" -->
+            <p><a href = "#">Back to top</a></p>
+        </footer>
+    </body>
+</html>
