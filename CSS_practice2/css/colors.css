@@ -1,0 +1,17 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background: papayawhip;                                     /* typically where to set the background color */
+    color: #333333;                                               /* typically where to set the font color */
+}
+
+/*
+p {
+    color: rgba(0,0,0,0.5)                                      rgbAlpha, the alpha value changes the transparency of the text. takes in a value from 0 - 1
+}
+
+p {
+    color: #FFFFFF;                                             hexadecimal color value that takes in 6 values in hexadecimal. 
+}
+*/  
