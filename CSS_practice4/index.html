@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Eduardo Salazar">
+    <meta name = "description" content = "Login page design">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/eae652acc8.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class = "container">
+            <div class = "login-box">
+                <h1 id = "login_head">Login</h1>
+                <h1 id = "sign_up_head">Sign Up</h1>
+                <div class = "input-rows">
+                    <div class = "input-box" id = "name-input">
+                        <i class="fa-solid fa-person" style = "color: black" id = "user_icon2"></i>
+                        <input type = "text" placeholder = "Name" id = "name">
+                    </div>
+                    <div class = "input-box">
+                        <i class="fa-solid fa-user" style = "color: black" id = "user_icon1"></i>
+                        <input type = "text" placeholder = "Username" id = "username">
+                    </div>
+                    <div class = "input-box">
+                        <i class="fa-solid fa-key" style = "color: black"></i>
+                        <input type = "password" placeholder = "Password" id = "password">
+                    </div>
+                    <button id = "submit_bttn">Sign in</button>
+                </div>
+                <div class>
+                    <p id = "p_element">Don't have an account?</p>
+                    <button id = "switch_bttn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <script src = "main.js"></script>
+    </main>
+</body>
+</html>
